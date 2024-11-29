@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solomon Baye - Information Security Architect</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background-color: #007BFF;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.2rem;
+    }
+    nav {
+      background-color: #0056b3;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    nav a {
+      flex: 1;
+      max-width: 200px;
+      text-align: center;
+      padding: 14px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #004494;
+    }
+    section {
+      padding: 2rem;
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    h2 {
+      color: #0056b3;
+    }
+    .portfolio-item {
+      background-color: #e9f5ff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+    .contact a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Solomon Baye</h1>
+    <p>Information Security Architect</p>
+  </header>
+  <nav>
+    <a href="#about" onclick="showTab('about')">About Me</a>
+    <a href="#portfolio" onclick="showTab('portfolio')">Portfolio</a>
+    <a href="#resume" onclick="showTab('resume')">Resume</a>
+    <a href="#contact" onclick="showTab('contact')">Contact</a>
+  </nav>
+  
+  <section id="about" class="active">
+    <h2>About Me</h2>
+    <p>Results-driven Information Security Architect with 7+ years of experience in Enterprise Security Architecture, Identity and Access Management (IAM), and Cloud Security. Specializing in designing secure, scalable IT solutions using TOGAF and SABSA frameworks, I am passionate about helping organizations protect their digital assets and thrive in an ever-changing security landscape.</p>
+  </section>
+  
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-item">
+      <h3>Enterprise Security Architecture Project</h3>
+      <p>Designed an enterprise-wide security framework that safeguarded critical assets for mobile money and public cloud environments. Delivered architecture guidelines aligned with ISO 27001 standards using TOGAF and SABSA frameworks.</p>
+      <p><strong>Key Result:</strong> Enhanced organizational security posture, reducing risk exposure by 30%.</p>
+    </div>
+    <div class="portfolio-item">
+      <h3>IAM Projects with IBM</h3>
+      <p>Led the design and implementation of HLD, LLD, and Non-functional PAT documents for seamless IAM integration with legacy systems.</p>
+      <p><strong>Key Result:</strong> Improved user authentication and compliance with GDPR, achieving 99.9% security system uptime.</p>
+    </div>
+    <div class="portfolio-item">
+      <h3>Cloud Security Implementation</h3>
+      <p>Delivered robust security solutions for cloud platforms, incorporating real-time monitoring and automated threat detection systems.</p>
+      <p><strong>Key Result:</strong> Reduced incident response time by 40% and ensured full compliance with international security standards.</p>
+    </div>
+  </section>
+  
+  <section id="resume">
+    <h2>Resume</h2>
+    <h3>Education</h3>
+    <p><strong>MSc in Control Engineering</strong>, Addis Ababa University, 2019</p>
+    <p><strong>BSc in Electrical Engineering</strong>, Addis Ababa University, 2015</p>
+    
+    <h3>Certifications</h3>
+    <ul>
+      <li>CISA - Exam Registered</li>
+      <li>Cybersecurity Architecture (IBM)</li>
+      <li>Identity and Access Management (IBM)</li>
+      <li>Cloud Security Architecture for the Enterprise (LinkedIn)</li>
+    </ul>
+    
+    <h3>Experience</h3>
+    <p><strong>Ethio Telecom, Information Security Architect</strong> (2023 - Present)</p>
+    <ul>
+      <li>Designed Enterprise Security Architecture and IAM frameworks.</li>
+      <li>Conducted risk assessments and mitigated potential threats.</li>
+    </ul>
+    <p><strong>Field Operation Technician</strong> (2020 - 2023)</p>
+    <p><strong>Contact Center Advisor</strong> (2016 - 2020)</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:solelectr@gmail.com">solelectr@gmail.com</a></p>
+    <p>Phone: +251 911 506 932</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/solomon-baye-security" target="_blank">linkedin.com/in/solomon-baye-security</a></p>
+  </section>
+  
+  <footer>
+    <p>&copy; 2024 Solomon Baye</p>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('section').forEach(section => {
+        section.classList.remove('active');
+      });
+      document.getElementById(tabId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
